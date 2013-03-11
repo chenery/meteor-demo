@@ -36,7 +36,7 @@ Utils.log = function(value) {
 };
 
 /**
- * Top Navigation template helpers and events
+ * Navigation template helpers and events
  */
 
 Template.navigation.pages = function()  {
@@ -142,10 +142,9 @@ Template.addMessageModal.events({
         Session.set("showAddMessageModal", false);
     },
     'click .save' : function(event, template) {
-        // todo where do the params come from?
         var message = template.find(".message").value;
 
-        // todo work out if this is encapsulated with the validation in here
+        // todo client and server validation should be in the same place?
         if (message.length) {
 
             // persist the message

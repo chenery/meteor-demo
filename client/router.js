@@ -9,6 +9,7 @@ Meteor.Router.add({
 
     '/users': 'users',
 
+    // todo add a user page
     '/user/:id': function(id) {
         Session.set('viewUserId', id);
         return 'user';

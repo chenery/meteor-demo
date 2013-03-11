@@ -1,7 +1,7 @@
 meteor-demo
 ===========
 
-Small app to demo how to build an app using meteor.
+Small app to demo how to build an app using meteor, running here http://chenery.meteor.com/.
 
 - Templates are reactive to data changes from the these data sources: logged in user, messages, users, modal window trigger and error data.
 - Add community packages such as moment.js using meteorite and npm https://atmosphere.meteor.com/wtf/app
@@ -39,3 +39,4 @@ How to connect to the local mongodb instance installed with meteor:
 - Meteor with Jasmine tests: https://github.com/sebastianmaier/meteor-jasmine
 - http://stackoverflow.com/questions/12987525/meteor-test-driven-development
 - integrate serverside debugger http://stackoverflow.com/questions/11034941/meteor-debug-on-server-side
+- 404 page client and server side
