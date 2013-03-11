@@ -1,0 +1,12 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# By default, a new Meteor app includes the autopublish and insecure packages, which together mimic the effect of each client having full read/write access to the server's database. These are useful prototyping tools, but typically not appropriate for production applications. When you're ready, just remove the packages.
+
+preserve-inputs
+accounts-google
+accounts-ui
+moment
+router
