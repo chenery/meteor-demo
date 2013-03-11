@@ -15,7 +15,19 @@ Small app to demo how to build an app using meteor.
 
 # Installation instructions
 
+To setup the basic environment we require meteorite with can be installed using npm (install with Node.js [http://nodejs.org/download/]).
 
+    npm install -g meteorite
+
+Then we are run using the meteorite commands:
+
+    git clone https://github.com/chenery/meteor-demo.git
+    cd meteor-demo/
+    mrt
+
+You will need to configure the google login widget to get a client id and secret.
+
+# Other stuff
 
 - How to connect to the local mongodb instance installed with meteor:
 
@@ -23,8 +35,7 @@ Small app to demo how to build an app using meteor.
     use meteor
     db.users.find()
 
-
-- todo Meteor with Jasmine tests: https://github.com/sebastianmaier/meteor-jasmine
-- http://stackoverflow.com/questions/12987525/meteor-test-driven-development
-
-todo integrate debugger
+# Todos
+- Meteor with Jasmine tests: [https://github.com/sebastianmaier/meteor-jasmine]
+- [http://stackoverflow.com/questions/12987525/meteor-test-driven-development]
+- integrate serverside debugger [http://stackoverflow.com/questions/11034941/meteor-debug-on-server-side]
