@@ -1,0 +1,15 @@
+<template name="users">
+
+    <table class="table table-striped">
+        <tbody>
+        {{#each users}}
+        <tr>
+            <td><span class="fui-man-24"></span>&nbsp;{{profile.name}}</td>
+            <td><span class="fui-time-24">&nbsp;joined {{fromNow createdAt}}&nbsp;</span></td>
+            <td><span class="fui-bubble-24">&nbsp;number of messages {{numberOfMessages}}</span></td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+</template>

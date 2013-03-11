@@ -1,0 +1,22 @@
+<template name="messages">
+    {{#if showAddMessageModal}}
+        {{> addMessageModal}}
+    {{else}}
+        <a href="#" class="btn btn-primary showAddMessageModal">Add message</a>
+    {{/if}}
+
+    <br/>
+    <br/>
+
+    <table class="table table-striped">
+        <tbody>
+        {{#each messages}}
+        <tr>
+            <td><span class="fui-bubble-24"></span>&nbsp;{{message}}</td>
+            <td><span class="fui-man-24">&nbsp;{{usersName owner}}&nbsp;</span></td>
+            <td><span class="fui-time-24">&nbsp;{{fromNow createdAt}}</span></td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</template>

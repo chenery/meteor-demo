@@ -1,0 +1,19 @@
+<template name="homepage">
+    <h1>Meteor Demo Homepage</h1>
+
+    <p>The homepage is the only one that does not require to you to be logged in.</p>
+
+    <p>Add notes about app here...</p>
+
+    {{#if currentUser}}
+
+    <h2>You are logged in as:</h2>
+    <p>_id {{currentUser._id}}</p>
+    <p>email {{currentUser.services.google.email}}</p>
+    <p>createdAt {{fromNow currentUser.createdAt}}</p>
+    <p>profile name {{currentUser.profile.name}}</p>
+    <p>Number of messages {{currentUser.numberOfMessages}}</p>
+
+    {{/if}}
+
+</template>

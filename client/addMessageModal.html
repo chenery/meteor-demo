@@ -1,0 +1,24 @@
+<template name="addMessageModal">
+    <div class="mask"> </div>
+    <div class="modal">
+        <div class="modal-header">
+            <button type="button" class="close cancel">&times;</button>
+            <h3>Add message</h3>
+        </div>
+
+        <div class="modal-body">
+            {{#if error}}
+            <div class="alert alert-error">{{error}}</div>
+            {{/if}}
+
+            <label>Message</label>
+            <textarea class="message span5"></textarea>
+
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn cancel">Cancel</a>
+            <a href="#" class="btn btn-primary save">Add message</a>
+        </div>
+    </div>
+</template>
