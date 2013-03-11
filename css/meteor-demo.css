@@ -2,3 +2,51 @@
 .navbar-unread {
     display: block;
 }
+
+/*
+    Override login stuff from accounts-ui
+    Note: you can install accounts-ui-unstyled and do it all yourself if you wish
+*/
+#login-buttons .login-display-name { margin-left: 20px; }
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+    margin-left:20px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    font-size: 16.5px;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+    /*cursor: pointer;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*-o-user-select: none;*/
+    /*user-select: none;*/
+    /*padding: 4px 8px;*/
+    /*font-size: 80%;*/
+    /*font-family: 'Helvetica Neue', Helvetica, Arial, default;*/
+    /*line-height: 1.5;*/
+    /*text-align: center;*/
+    /*color: #fff;*/
+    /*text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);*/
+    /*background-color: #8790b4;*/
+    /*background-image: -moz-linear-gradient(top, #a5acc9, #596595);*/
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a5acc9), to(#596595));*/
+    /*background-image: -webkit-linear-gradient(top, #a5acc9, #596595);*/
+    /*background-image: -o-linear-gradient(top, #a5acc9, #596595);*/
+    /*background-image: linear-gradient(to bottom, #a5acc9, #596595);*/
+    /*background-repeat: repeat-x;*/
+    /*border-radius: 4px;*/
+    /*border: 1px solid #1b1e2d;*/
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
+    /*-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
+}

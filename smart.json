@@ -1,6 +1,7 @@
 {
   "packages": {
     "moment": {},
-    "router": {}
+    "router": {},
+    "HTML5-History-API": {}
   }
 }

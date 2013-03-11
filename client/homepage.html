@@ -1,10 +1,11 @@
 <template name="homepage">
-    <h1>Meteor Demo</h1>
+    <h1>Meteor Demo by Chenery</h1>
 
-    <p>The homepage is the only one that does not require to you to be logged in.</p>
+    <p>Small app to demo how to build an app using meteor implemented by Paul Chenery.</p>
+    <p>View source code and installation instructions at <a href="https://github.com/chenery/meteor-demo">https://github.com/chenery/meteor-demo</a></p>
 
     <h3>What this app is doing:</h3>
-    <p>Templates are reactive to data changes from the these data sources: messages, users, modal window trigger and error data.</p>
+    <p>Templates are reactive to data changes from the these data sources: logged in user, messages, users, modal window trigger and error data.</p>
     <p>Uses community packages such as moment.js using meteorite and npm <a href="https://atmosphere.meteor.com/wtf/app">https://atmosphere.meteor.com/wtf/app</a></p>
     <p>Page URLs are added client side using the meteor router <a href="https://github.com/tmeasday/meteor-router">https://github.com/tmeasday/meteor-router</a>.</p>
     <p>Example of how to produce a JSON API endpoint server side using the meteor router: <a href="/data/messages/first.json">/data/messages/first.json</a></p>
@@ -14,7 +15,7 @@
 
     {{#if currentUser}}
 
-    <h2>You are logged in as:</h2>
+    <h3>You are logged in as:</h3>
     <p>_id {{currentUser._id}}</p>
     <p>email {{currentUser.services.google.email}}</p>
     <p>createdAt {{fromNow currentUser.createdAt}}</p>

@@ -19,7 +19,6 @@ Meteor.Router.add({
 // When the route function is called, this corresponds to a page.js Context object
 Meteor.Router.filters({
     requireLogin: function(page) {
-        console.log('userId at filter ' + Meteor.userId());
         if (Meteor.userId()) {
             return page;
         } else {
